@@ -1,0 +1,18 @@
+<fieldset class="rating">
+  <input type="radio" id="{{concat "star1_" elementId}}" name="rating" value="1" readonly={{if readonly "readonly"}}
+    checked={{if rating1 "checked"}} onclick={{action "rating"}} />
+  <label class="full" for="{{concat "star1_" elementId}}" title="1 stars"></label>
+  <input type="radio" id="{{concat "star2_" elementId}}" name="rating" value="2" readonly={{if readonly "readonly"}}
+    checked={{if rating2 "checked"}} onclick={{action "rating"}} />
+  <label class="full" for="{{concat "star2_" elementId}}" title="2 stars"></label>
+  <input type="radio" id="{{concat "star3_" elementId}}" name="rating" value="3" readonly={{if readonly "readonly"}}
+    checked={{if rating3 "checked"}} onclick={{action "rating"}} />
+  <label class="full" for="{{concat "star3_" elementId}}" title="3 stars"></label>
+  <input type="radio" id="{{concat "star4_" elementId}}" name="rating" value="4" readonly={{if readonly "readonly"}}
+    checked={{if rating4 "checked"}} onclick={{action "rating"}} />
+  <label class="full" for="{{concat "star4_" elementId}}" title="4 stars"></label>
+  <input type="radio" id="{{concat "star5_" elementId}}" name="rating" value="5" readonly={{if readonly "readonly"}}
+    checked={{if rating5 "checked"}} onclick={{action "rating"}} />
+  <label class="full" for="{{concat "star_" elementId}}" title="5 stars"></label>
+  {{log rating}}
+</fieldset>

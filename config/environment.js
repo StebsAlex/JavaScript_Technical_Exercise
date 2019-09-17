@@ -1,4 +1,4 @@
-module.exports = function(environment) {
+module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'ember-movie-list',
     environment,
@@ -21,13 +21,13 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "xyz",
-      authDomain: "YOUR-FIREBASE-APP.firebaseapp.com",
-      databaseURL: "https://YOUR-FIREBASE-APP.firebaseio.com",
-      projectId: "YOUR-FIREBASE-APP",
-      storageBucket: "YOUR-FIREBASE-APP.appspot.com",
+      apiKey: "AIzaSyD5oLvX8Utnz-iY3bTHOUKN6doYAM5yQlQ",
+      authDomain: "stebin-movies.firebaseapp.com",
+      databaseURL: "https://stebin-movies.firebaseio.com",
+      projectId: "stebin-movies",
+      storageBucket: "stebin-movies.appspot.com",
       messagingSenderId: "00000000000",
-      appId: "APP ID HERE"
+      appId: "1:509481587238:web:5d796ff44dadc931cc0ce7"
     },
   };
 
