@@ -1,6 +1,23 @@
-{{#each movies as |movie|}}
+<div>
+  Sort Field
+  <select onchange={{action "filterField" value="target.value" }}>
+    <option value="title">Title</option>
+    <option value="rating">Rating</option>
+  </select>
+</div>
+<div>
+  Sort Direction
+  <select onchange={{action "filterDirection" value="target.value" }}>
+    <option value="asc">Ascending</option>
+    <option value="desc">Descending</option>
+  </select>
+</div>
+
+{{#each sortedMovies as |movie|}}
   {{movie-list/movie-list-item
     movie=movie
+    delete=delete
+    edit=edit
   }}
   <hr />
 {{/each}}

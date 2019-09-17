@@ -1,5 +1,10 @@
-<img src={{movie.image}}/>
-<div class='details'>
-    <h1>{{movie.heading}}</h1>
-    <p>{{movie.description}}</p>
+<img src={{movie.image}} />
+<div class='movie-details'>
+  <h1>{{movie.title}}</h1>
+  <div class="details">
+    <p class="description">{{movie.description}}</p>
+    {{star-rating readonly=true rating=movie.rating class="rating"}}
+  </div>
+  <button onclick={{action delete movie}}>Delete me</button>
+  <button onclick={{action edit movie}}>Edit Movie</button>
 </div>

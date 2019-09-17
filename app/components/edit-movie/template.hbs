@@ -1,0 +1,10 @@
+{{input value=movie.title placeholder='Title..' required=true class='form-title'}}
+
+{{input value=movie.description placeholder='Description..' required=true class='form-description'}}
+
+{{input value=movie.image placeholder='Image url..' required=true class='form-image-url'}}
+
+{{star-rating readonly=false rating=movie.rating}}
+
+<button {{action update movie}} class="save">Save</button>
+<button{{action cancel movie}} class="cancel"> Cancel </button>

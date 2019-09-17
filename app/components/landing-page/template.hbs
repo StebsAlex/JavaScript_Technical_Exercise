@@ -2,7 +2,19 @@
 
 {{movie-list
   movies=movies
+  edit=edit
+  delete=delete
 }}
 
-{{add-movie-form
-}}
+{{#if movie}}
+  {{edit-movie
+    movie=movie
+    update=update
+    cancel=cancel
+  }}
+{{else}}
+  {{add-movie-form
+    add=add
+    movie=movie
+  }}
+{{/if}}
